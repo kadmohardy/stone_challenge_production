@@ -21,7 +21,7 @@ config :stone_challenge, StoneChallengeWeb.Endpoint,
 config :logger, level: :info
 
 config :stone_challenge, StoneChallenge.Repo,
-  adapter: Ecto.Adapters.Postgres
+  adapter: Ecto.Adapters.Postgres,
   username: System.get_env("USER"),
   password: System.get_env("PASS"),
   database: System.get_env("DATABASE"),
