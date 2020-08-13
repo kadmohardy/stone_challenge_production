@@ -14,7 +14,7 @@ config :stone_challenge, StoneChallengeWeb.Endpoint,
   url: [scheme: "https", host: "stonechallenge.herokuapp.com", port: 443],
   force_ssl: [rewrite_on: [:x_forwarded_proto]],
   cache_static_manifest: "priv/static/cache_manifest.json",
-  secret_key_base: Map.fetch!(System.get_env(), "SECRET_KEY_BASE")
+  secret_key_base: Map.fetch!(System.get_env(), "SECRET_KEY_BASE"),
   server: true
 
 # Do not print debug messages in production
